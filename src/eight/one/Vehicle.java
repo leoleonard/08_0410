@@ -1,9 +1,9 @@
 package eight.one;
 
 public class Vehicle {
-    String name;
-    double capacity;
-    double fuelConsumption = getFuelConsumption() / 100;
+    private String name;
+    private double capacity;
+    private double fuelConsumption;
 
     public Vehicle(String name, double capacity, double fuelConsumption) {
         this.name = name;
@@ -33,5 +33,13 @@ public class Vehicle {
 
     public void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
+    }
+
+    double realFuelConsumpiton() {
+        return getFuelConsumption();
+    }
+
+    double range() {
+        return capacity / realFuelConsumpiton() * 100;
     }
 }
