@@ -35,11 +35,11 @@ public class Vehicle {
         this.fuelConsumption = fuelConsumption;
     }
 
-    double realFuelConsumpiton() {
-        return getFuelConsumption();
-    }
-
     double range() {
         return capacity / realFuelConsumpiton() * 100;
+    }
+
+    double realFuelConsumpiton() {
+        return getFuelConsumption();
     }
 }
