@@ -18,7 +18,7 @@ public class Truck extends Car {
 
     double realFuelConsumption() {
         if (isAc()) {
-            return getFuelConsumption() + getFuelConsumption() * 1.6 + (weight / 100 * 0.5);
+            return getFuelConsumption() + (getFuelConsumption() * 1.6 + (weight / 100 * 0.5));
         } else {
             return getFuelConsumption() + (weight / 100 * 0.5);
         }
