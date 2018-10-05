@@ -1,7 +1,7 @@
 package eight.one;
 
 public class Truck extends Car {
-    double weight;
+    private double weight;
 
     public Truck(String name, double capacity, double fuelConsumption, boolean acOn, double weight) {
         super(name, capacity, fuelConsumption, acOn);
@@ -17,8 +17,8 @@ public class Truck extends Car {
     }
 
     double realFuelConsumption() {
-        if (isAC()) {
-            return getFuelConsumption() * 1.6 + (weight / 100 * 0.5);
+        if (isAc()) {
+            return getFuelConsumption() + getFuelConsumption() * 1.6 + (weight / 100 * 0.5);
         } else {
             return getFuelConsumption() + (weight / 100 * 0.5);
         }

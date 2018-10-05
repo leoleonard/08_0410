@@ -1,24 +1,24 @@
 package eight.one;
 
 public class Car extends Vehicle {
-    private boolean AC;
+    private boolean ac;
 
-    public Car(String name, double capacity, double fuelConsumption, boolean AC) {
+    public Car(String name, double capacity, double fuelConsumption, boolean ac) {
         super(name, capacity, fuelConsumption);
-        this.AC = AC;
+        this.ac = ac;
     }
 
-    public boolean isAC() {
-        return AC;
+    public boolean isAc() {
+        return ac;
     }
 
-    public void setAC(boolean AC) {
-        this.AC = AC;
+    public void setAc(boolean ac) {
+        this.ac = ac;
     }
 
     double realFuelConsumpiton() {
-        if (!isAC()) {
-            return getFuelConsumption() * 0.8;
+        if (isAc()) {
+            return getFuelConsumption() + getFuelConsumption() * 0.8;
         } else {
             return getFuelConsumption();
         }

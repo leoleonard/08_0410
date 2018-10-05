@@ -17,10 +17,10 @@ public class Garage {
         System.out.println("----------------------------");
 
         System.out.println("Air condition is ON");
-        car1.setAC(true);
-        car2.setAC(true);
-        truck1.setAC(true);
-        truck2.setAC(true);
+        car1.setAc(true);
+        car2.setAc(true);
+        truck1.setAc(true);
+        truck2.setAc(true);
         System.out.println(car1.getName() + " has range " + car1.range() + " km");
         System.out.println(car2.getName() + " has range " + car2.range() + " km");
         System.out.println(truck1.getName() + " has range " + truck1.range() + " km");
